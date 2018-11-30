@@ -32,13 +32,106 @@
                     <view key="view" contentMode="scaleToFill" id="HFk-QU-giH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All About Card Games" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deH-55-W6w">
+                                <rect key="frame" x="55.5" y="26" width="264" height="162"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="HBR-KR-EZJ" userLabel="Games Stack View">
+                                <rect key="frame" x="52.5" y="197" width="270" height="284"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgc-kK-PJL">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="70"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bgc-kK-PJL" secondAttribute="height" multiplier="27:7" id="0wC-TO-ctR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <state key="normal" title="To Be Determined">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21T-LK-D1I">
+                                        <rect key="frame" x="0.0" y="107" width="270" height="70"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="6sN-Sp-Hho"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <state key="normal" title="Matching">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlq-t7-bNS">
+                                        <rect key="frame" x="0.0" y="214" width="270" height="70"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qlq-t7-bNS" secondAttribute="height" multiplier="27:7" id="kqu-9y-apr"/>
+                                            <constraint firstAttribute="height" constant="70" id="sDC-bX-9ez"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <state key="normal" title="War">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="21T-LK-D1I" firstAttribute="width" secondItem="HBR-KR-EZJ" secondAttribute="width" id="agu-eb-c0P"/>
+                                    <constraint firstItem="qlq-t7-bNS" firstAttribute="width" secondItem="HBR-KR-EZJ" secondAttribute="width" id="ahg-dO-lgn"/>
+                                    <constraint firstAttribute="width" secondItem="HBR-KR-EZJ" secondAttribute="height" multiplier="135:142" id="iAR-BB-30D"/>
+                                    <constraint firstItem="bgc-kK-PJL" firstAttribute="width" secondItem="HBR-KR-EZJ" secondAttribute="width" id="jej-2S-Wyb"/>
+                                    <constraint firstItem="bgc-kK-PJL" firstAttribute="centerX" secondItem="HBR-KR-EZJ" secondAttribute="centerX" id="zXw-aj-LCU"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GtI-i1-c5e" userLabel=" Info Stack View">
+                                <rect key="frame" x="80" y="526" width="215" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ge-gy-W3L">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="40"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <state key="normal" title="Statstics">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7t2-5L-OtL">
+                                        <rect key="frame" x="0.0" y="60" width="215" height="40"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="IwE-hv-wpg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <state key="normal" title="How To Play">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="fUH-He-aw8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GtI-i1-c5e" firstAttribute="centerX" secondItem="VpX-TG-vHZ" secondAttribute="centerX" id="2LX-bR-Y6G"/>
+                            <constraint firstItem="deH-55-W6w" firstAttribute="top" secondItem="VpX-TG-vHZ" secondAttribute="top" constant="6" id="Htg-na-ceg"/>
+                            <constraint firstItem="GtI-i1-c5e" firstAttribute="height" secondItem="HFk-QU-giH" secondAttribute="height" multiplier="0.15" id="KQw-Tc-evw"/>
+                            <constraint firstItem="deH-55-W6w" firstAttribute="width" secondItem="HFk-QU-giH" secondAttribute="width" multiplier="0.705" id="LH9-k7-6ej"/>
+                            <constraint firstItem="deH-55-W6w" firstAttribute="height" secondItem="VpX-TG-vHZ" secondAttribute="height" multiplier="0.25" id="OGc-qA-eVv"/>
+                            <constraint firstItem="deH-55-W6w" firstAttribute="centerX" secondItem="VpX-TG-vHZ" secondAttribute="centerX" id="OcJ-df-qbk"/>
+                            <constraint firstItem="VpX-TG-vHZ" firstAttribute="bottom" secondItem="GtI-i1-c5e" secondAttribute="bottom" constant="41" id="R5h-Ra-F4N"/>
+                            <constraint firstItem="GtI-i1-c5e" firstAttribute="centerX" secondItem="deH-55-W6w" secondAttribute="centerX" id="i5h-jb-9qW"/>
+                            <constraint firstItem="GtI-i1-c5e" firstAttribute="top" secondItem="HBR-KR-EZJ" secondAttribute="bottom" constant="45" id="vyz-P3-YCy"/>
+                            <constraint firstItem="GtI-i1-c5e" firstAttribute="centerX" secondItem="HBR-KR-EZJ" secondAttribute="centerX" id="wNS-uN-ZKC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VpX-TG-vHZ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uwf-jz-kba" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="204"/>
+            <point key="canvasLocation" x="128.80000000000001" y="203.74812593703149"/>
         </scene>
         <!--WarVC-->
         <scene sceneID="IAv-zo-3gS">
@@ -47,13 +140,13 @@
                     <view key="view" contentMode="scaleToFill" id="jiG-aZ-cez">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OJi-08-gSl"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1B-Ph-9yz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="955"/>
+            <point key="canvasLocation" x="924" y="204"/>
         </scene>
         <!--MatchingVC-->
         <scene sceneID="myS-2T-Vyp">
@@ -62,13 +155,13 @@
                     <view key="view" contentMode="scaleToFill" id="gVD-tJ-vKc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jyL-DJ-gdG"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KSe-W0-yLf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="204"/>
+            <point key="canvasLocation" x="924" y="-509"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="W8w-qI-VGM">
@@ -77,7 +170,7 @@
                     <view key="view" contentMode="scaleToFill" id="sUc-t1-HXa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Vg8-tm-XhS"/>
                     </view>
                 </viewController>
@@ -92,13 +185,32 @@
                     <view key="view" contentMode="scaleToFill" id="n5v-H0-eD1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Statistics" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLO-ZR-jXv">
+                                <rect key="frame" x="16" y="20" width="343" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="p4a-Cw-jtm">
+                                <rect key="frame" x="80" y="69" width="215" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Gane1"/>
+                                    <segment title="Matching"/>
+                                    <segment title="War"/>
+                                </segments>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5a5-HS-dI3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQU-p4-yLm" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-726" y="204"/>
+            <point key="canvasLocation" x="-727" y="534"/>
         </scene>
         <!--How To PlayVC-->
         <scene sceneID="qau-qM-n3C">
@@ -107,13 +219,32 @@
                     <view key="view" contentMode="scaleToFill" id="djX-XA-fMQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How To Play" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5O-NG-qSd">
+                                <rect key="frame" x="16" y="20" width="343" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="R5j-fK-KMF">
+                                <rect key="frame" x="80" y="74" width="215" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Gane1"/>
+                                    <segment title="Matching"/>
+                                    <segment title="War"/>
+                                </segments>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nLe-fU-LKu"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q6t-Gy-nMB" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-727" y="-509"/>
+            <point key="canvasLocation" x="-727" y="-238"/>
         </scene>
     </scenes>
 </document>
