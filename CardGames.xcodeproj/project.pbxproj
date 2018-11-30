@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		3BD7B19D21B1B59D009D95C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7B19C21B1B59D009D95C8 /* AppDelegate.swift */; };
-		3BD7B19F21B1B59D009D95C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7B19E21B1B59D009D95C8 /* ViewController.swift */; };
+		3BD7B19F21B1B59D009D95C8 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD7B19E21B1B59D009D95C8 /* MenuVC.swift */; };
 		3BD7B1A221B1B59D009D95C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD7B1A021B1B59D009D95C8 /* Main.storyboard */; };
 		3BD7B1A421B1B59E009D95C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD7B1A321B1B59E009D95C8 /* Assets.xcassets */; };
 		3BD7B1A721B1B59E009D95C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BD7B1A521B1B59E009D95C8 /* LaunchScreen.storyboard */; };
+		C817A4F521B1B9B6005F2E2D /* HowToPlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817A4F421B1B9B6005F2E2D /* HowToPlayVC.swift */; };
+		C817A4F721B1B9EF005F2E2D /* WarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817A4F621B1B9EF005F2E2D /* WarVC.swift */; };
+		C817A4F921B1BA66005F2E2D /* StatisticVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817A4F821B1BA66005F2E2D /* StatisticVC.swift */; };
+		C817A4FB21B1BA8F005F2E2D /* MatchingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C817A4FA21B1BA8F005F2E2D /* MatchingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3BD7B19921B1B59D009D95C8 /* CardGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD7B19C21B1B59D009D95C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BD7B19E21B1B59D009D95C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BD7B19E21B1B59D009D95C8 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		3BD7B1A121B1B59D009D95C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BD7B1A321B1B59E009D95C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BD7B1A621B1B59E009D95C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BD7B1A821B1B59E009D95C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C817A4F421B1B9B6005F2E2D /* HowToPlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayVC.swift; sourceTree = "<group>"; };
+		C817A4F621B1B9EF005F2E2D /* WarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarVC.swift; sourceTree = "<group>"; };
+		C817A4F821B1BA66005F2E2D /* StatisticVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticVC.swift; sourceTree = "<group>"; };
+		C817A4FA21B1BA8F005F2E2D /* MatchingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		3BD7B19B21B1B59D009D95C8 /* CardGames */ = {
 			isa = PBXGroup;
 			children = (
-				3BD7B19C21B1B59D009D95C8 /* AppDelegate.swift */,
-				3BD7B19E21B1B59D009D95C8 /* ViewController.swift */,
 				3BD7B1A021B1B59D009D95C8 /* Main.storyboard */,
+				C817A4FF21B1BB92005F2E2D /* ViewControllers */,
 				3BD7B1A321B1B59E009D95C8 /* Assets.xcassets */,
+				3BD7B19C21B1B59D009D95C8 /* AppDelegate.swift */,
 				3BD7B1A521B1B59E009D95C8 /* LaunchScreen.storyboard */,
 				3BD7B1A821B1B59E009D95C8 /* Info.plist */,
 			);
 			path = CardGames;
+			sourceTree = "<group>";
+		};
+		C817A4FD21B1BB08005F2E2D /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				C817A4F621B1B9EF005F2E2D /* WarVC.swift */,
+				C817A4FA21B1BA8F005F2E2D /* MatchingVC.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		C817A4FE21B1BB40005F2E2D /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				C817A4F421B1B9B6005F2E2D /* HowToPlayVC.swift */,
+				C817A4F821B1BA66005F2E2D /* StatisticVC.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		C817A4FF21B1BB92005F2E2D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3BD7B19E21B1B59D009D95C8 /* MenuVC.swift */,
+				C817A4FD21B1BB08005F2E2D /* Games */,
+				C817A4FE21B1BB40005F2E2D /* Information */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BD7B19F21B1B59D009D95C8 /* ViewController.swift in Sources */,
+				C817A4F921B1BA66005F2E2D /* StatisticVC.swift in Sources */,
+				C817A4F521B1B9B6005F2E2D /* HowToPlayVC.swift in Sources */,
+				C817A4F721B1B9EF005F2E2D /* WarVC.swift in Sources */,
+				3BD7B19F21B1B59D009D95C8 /* MenuVC.swift in Sources */,
 				3BD7B19D21B1B59D009D95C8 /* AppDelegate.swift in Sources */,
+				C817A4FB21B1BA8F005F2E2D /* MatchingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

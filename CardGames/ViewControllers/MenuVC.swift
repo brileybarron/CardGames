@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MenuVC.swift
 //  CardGames
 //
 //  Created by Briley Barron on 11/30/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MenuVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
